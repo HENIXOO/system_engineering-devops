@@ -1,0 +1,1 @@
+This course has taught me how to use Git, GitHub, branching, committing, pull requests, and now local syncing. It is helping me understand real developer workflow.
