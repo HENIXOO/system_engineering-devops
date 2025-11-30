@@ -1,18 +1,16 @@
 #!/usr/bin/env bash
 # Display the content of the current directory after the first dash (-)
 
+shopt -s nullglob   # ensures that * expands to nothing if directory is empty
 for file in *; do
-  # Skip hidden files
+  # skip hidden files
   [[ "$file" == .* ]] && continue
-  # Print the part after the first dash
-  echo "${file#*-}"
-done
-#!/usr/bin/env bash
-# Display the content of the current directory after the first dash (-)
-
-for file in *; do
-  # Skip hidden files
-  [[ "$file" == .* ]] && continue
-  # Print the part after the first dash
-  echo "${file#*-}"
+  # skip directories if you only want files (optional)
+  # [[ -d "$file" ]] && continue
+  # print part after first dash
+  if [[ "$file" == *-* ]]; then
+    echo "${file#*-}"
+  else
+    echo "$file"
+  fi
 done
