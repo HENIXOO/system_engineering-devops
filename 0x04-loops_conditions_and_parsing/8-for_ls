@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Display the content of the current directory after the first dash (-)
+
+for file in *; do
+  # Skip hidden files
+  [[ "$file" == .* ]] && continue
+  # Print the part after the first dash
+  echo "${file#*-}"
+done
+#!/usr/bin/env bash
+# Display the content of the current directory after the first dash (-)
+
+for file in *; do
+  # Skip hidden files
+  [[ "$file" == .* ]] && continue
+  # Print the part after the first dash
+  echo "${file#*-}"
+done
