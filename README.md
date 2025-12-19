@@ -1,3 +1,3 @@
-# System Engineering & DevOps
+# ALX System Engineering & DevOps
 
-This repository contains ALX System Engineering and DevOps projects.
+Repository for 0x05-processes_and_signals project scripts.
