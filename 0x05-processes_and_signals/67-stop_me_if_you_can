@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script stops the 7-highlander process without using kill or killall
+
+# Use pkill to stop the process by name
+pkill -f 7-highlander
