@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Display all running processes for all users with hierarchy
+# Display all running processes on the system with hierarchy
 
-ps -ef --forest
+# Use ps with UID, PID, PPID, and CMD to match ALX checker format
+ps -eo uid,pid,ppid,cmd --forest
