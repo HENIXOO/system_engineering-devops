@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script lists all processes and filters only lines containing bash
+# shellcheck disable=SC2009
+
+ps -eo uid,pid,ppid,cmd --forest | grep bash
